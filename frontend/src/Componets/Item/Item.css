@@ -1,8 +1,5 @@
 .item{
-    width: 23%;
-    min-width: 250px;
-    padding: 10px 12px;
-    border-radius: 1px solid #cce7d0;
+    width: 350px;   
 }
 .item p{
     margin: 10px 0px;
