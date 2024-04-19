@@ -2,11 +2,11 @@
 .navbar{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(212, 212, 212);
     padding: 4px;
-    box-shadow: 0 5px 15px reg(0,0,0,0.06);
-    z-index: 999;
+    background: white;
+    box-shadow: 0 1px 3px -2px black;
     position: sticky;
+    z-index: 999;
     top: 0;
     left: 0;
 }
@@ -27,7 +27,7 @@
 
 .nav-logo p {
     color: black;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 12px;
 }
@@ -86,16 +86,16 @@
     background-color: #e3e6f3;
 }
 
-.nav-cart-count{
-    width: 19px;
-    height: 19px;
+.nav-cart-count {
+    width: 16px;
+    height: 17px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -40px;
-    margin-left: -49px;
-    border-radius: 10px;
-    font-size: 14px;
-    background :red;
+    margin-top: -43px;
+    margin-left: -45px;
+    border-radius: 12px;
+    font-size: 11px;
+    background: red;
     color: white;
 }
