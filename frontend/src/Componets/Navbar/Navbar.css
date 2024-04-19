@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     background-color: rgb(212, 212, 212);
-    padding: 1px;
+    padding: 4px;
     box-shadow: 0 5px 15px reg(0,0,0,0.06);
     z-index: 999;
     position: sticky;
@@ -21,13 +21,15 @@
 }
 
 .nav-logo img {
-    max-width: 132%;
+    max-width: 130%;
+    margin-bottom: 20PX;
 }
 
-.nav-logo p{
+.nav-logo p {
     color: black;
     font-size: 15px;
     font-weight: 600;
+    margin-bottom: 12px;
 }
 
 .nav-menu{
