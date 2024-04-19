@@ -1,8 +1,11 @@
 .item{
-    width: 350px;
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border-radius: 1px solid #cce7d0;
 }
 .item p{
-    margin: 6px 0px;
+    margin: 10px 0px;
 }
 .item-prices{
     display: flex;
