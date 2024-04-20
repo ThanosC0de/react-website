@@ -35,14 +35,15 @@
     margin-left: 30px;
     border: none;
     outline: none;
-    color: #616161;
+    color: black;
     font-family: robot;
     font-size: 16px;
 }
 .newsletter div button{
     width: 210px;
-    height: 70ox;
+    height: 70px;
     border-radius: 80px;
+    background: black;
     color: white;
     font-size: 16px;
     cursor: pointer;
