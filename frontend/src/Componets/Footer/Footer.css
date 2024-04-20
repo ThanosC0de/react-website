@@ -10,7 +10,7 @@
     align-items: center;
     gap: 20px;
 }
-.footer_logo p {
+.footer_logo p{
     color: #383838;
     font-size: 45px;
     font-weight: 500;
@@ -25,7 +25,11 @@
 .footer_links li{
     cursor: pointer;
 }
-.footer-social-container{
+.footer-social-icon{
+    display: flex;
+    gap: 20px;
+}
+.footer-icons-container{
     padding: 10px;
     padding-bottom: 6px;
     background: #fbfbfb;
