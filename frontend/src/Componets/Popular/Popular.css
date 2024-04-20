@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 89vh;
+    height: 90vh;
+    margin: ;
 }
 .popular h1{
     color: black;
@@ -11,13 +12,14 @@
     font-weight: 500;
 }
 .popular hr{
-    width: 200px;
-    height: 15px;
+    width: 306px;
+    height: 4px;
     border-radius: 50px;
     background: black;
 }
-.popular-item{
+/* .popular-item{
     margin-top: 35px;
     display: flex;
     gap: 10px;
-}
+    margin-left: 50px;
+} */
