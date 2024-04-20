@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 .new-collections h1{
     color: black;
@@ -22,5 +22,4 @@
     margin-top: 50px;
     gap: 15px;
     padding: 10px;
-
 }

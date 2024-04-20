@@ -5,24 +5,24 @@
     align-items: center;
     gap: 50px;
 }
-.footer_logo{
+.footer-logo{
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.footer_logo p{
+.footer-logo p{
     color: #383838;
     font-size: 45px;
     font-weight: 500;
 }
-.footer_links{
+.footer-links{
     display: flex;
     list-style: none;
     gap: 50px;
     color: #252525;
     font-size: 20px;
 }
-.footer_links li{
+.footer-links li{
     cursor: pointer;
 }
 .footer-social-icon{
