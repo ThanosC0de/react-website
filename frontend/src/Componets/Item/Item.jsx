@@ -1,17 +1,20 @@
 import React from 'react'
 import './Item.css'
-import pro_1 from '../Assets/product_1'
 
-const Item = () => {
+const Item = (props) => {
     return(
-        <div className="popular_pro">
-            <div className="pro">
-                <img src={pro_1} alt="" />
-
+        <div className="item">
+            <img src={props.image} alt="" />
+            <p>{props.name}</p>
+            <div className="item-prices">
+                <div className="item-price-new">
+                    ${props.new_price}
+                </div>
+                <div className="item-price-old">
+                    ${props.old_price}
+                </div>
             </div>
-
         </div>
-        
     )
 }
 
