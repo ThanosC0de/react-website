@@ -32,7 +32,22 @@ const ProductDisplay = (props) => {
                 <div className="productdisplay-right-price-old">${product.old_price}</div>
                 <div className="productdisplay-right-price-new">${product.new_price}</div>
             </div>
-            <div className="productdisplay-right-description"></div>
+            <div className="productdisplay-right-description">
+            Classy and Sassy Diamond Ring
+            </div>
+            <div className="productdisplay-right-size">
+                <h1>Select Size</h1>
+                <div className="productdisplay-right-size">
+                    <div>s</div>
+                    <div>m</div>
+                    <div>l</div>
+                    <div>xl</div>
+                    <div>xxl</div>
+                </div>
+                <button>ADD TO CART</button> 
+                <p className='productdisplay-right-category'><span>Category :</span>Women, T-Shirt, Crop Top</p>   
+                <p className='productdisplay-right-category'><span>Tags :</span>Morern, Latest</p>   
+            </div>
         </div>
     </div>
   )
