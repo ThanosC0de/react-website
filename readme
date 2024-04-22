@@ -3,3 +3,15 @@ react-website
 all photo 
 Width X Height
 350 x 500 px
+
+import React from 'react'
+
+const Cart = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default Cart
