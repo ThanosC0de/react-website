@@ -1,6 +1,6 @@
 .productdisplay{
     display: flex;
-    margin: 0px 170px;
+    margin: 0px 130px;
 }
 .productdisplay-left{
     display: flex;
@@ -12,11 +12,11 @@
     gap: 16px;
 }
 .productdisplay-img-list img{
-    height: 163px;
+    height: 140px;
 }
 .productdisplay-main-img{
-    width: 586px;
-    height: 700px;
+    width: 500px;
+    height: 600px;
 }
 .productdisplay-right{
     margin: 0px 70px;
