@@ -88,6 +88,7 @@
     .loginsignup{
         padding-left: 0px;
         padding-right: 0px;
+        height: 72vh;
     }
     .loginsingnup-container{
         padding: 20px 30px;
@@ -105,5 +106,10 @@
     .loginsingnup-container button{
         height: 50px;
         font-size: 16px;
+    }
+}
+@media (max-width:500px) {
+    .loginsignup{
+        height: 60vh;
     }
 }
