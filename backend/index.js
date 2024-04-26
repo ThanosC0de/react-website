@@ -23,7 +23,7 @@ app.get("/",(req,res)=>{
 // Image storege Engine
 
 const storege = multer.diskStorage({
-    destination: './upload/images',
+    destination: './upload/image',
     filename:(req,file,cd)=>{
         return cd(null,`${file.fieldname}_${Data.now()}${path.extname(file.originalname)}`)
     }
