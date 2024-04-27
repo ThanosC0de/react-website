@@ -12,7 +12,8 @@ const { log } = require("console");
 app.use(express.json());
 app.use(cors());
 
-// Database conection with mongoDb
+// Database conection with MongoDb
+
 mongoose.connect("mongodb+srv://artcy:99794@cluster0.ccvaoqa.mongodb.net/react-website-main");
 
 //ApI creaction
@@ -33,6 +34,7 @@ const storage = multer.diskStorage({
 const upload = multer({storage:storage})
 
 //creating uplode endpoint for images
+
 app.use('/images',express.static('upload/images'))
 
 app.post("/upload",upload.single('product'),(req,res)=>{    
@@ -108,6 +110,24 @@ app.post('/addproduct',async (req,res)=>{
     })
 })
 
+// creating API for deleting product
+
+app.post('/removeproduct',async (req,res)=>{
+    await Product.findOneAndDelete({id:req.body.id});
+    console.log("Removed");
+    res.json({
+        success:true,
+        name:req.body.name
+    })
+})
+
+//Creating API getting All product
+
+app.get('/allproducts',async(req,res)=>{
+    let products = await Product.find({});
+    console.log("ALL Products Fetched");
+    res.send(products);
+})
 
 app.listen(port,(error)=>{
     if(!error){
