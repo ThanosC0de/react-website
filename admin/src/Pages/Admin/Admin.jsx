@@ -7,7 +7,7 @@ import ListProduct from '../../Components/ListProduct/ListProduct'
 
 const Admin = () => {
   return (
-    <div className='Admin'>
+    <div className='admin'>
       <Sidebar />
       <Routes>
         <Route path='/addproduct' element={<AddProduct />} />
