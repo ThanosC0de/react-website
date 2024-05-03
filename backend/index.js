@@ -121,6 +121,16 @@ app.post('/removeproduct',async (req,res)=>{
     })
 })
 
+
+//user shema crating for user model
+
+const User = mongoose.model('Users',{
+    name:{
+        type:String,
+    }
+})
+
+
 //Creating API getting All product
 
 app.get('/allproducts',async(req,res)=>{
