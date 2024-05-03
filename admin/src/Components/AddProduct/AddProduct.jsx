@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import "./AddProduct.css";
-import upload_area from "../../assets/upload_area.svg";
+import React, { useState } from "react"
+import './AddProduct.css'
+import upload_area from '../../Assets/upload_area.svg'
 
 const AddProduct = () =>  {
   const [image, setImage] = useState(false);
@@ -85,15 +85,11 @@ const AddProduct = () =>  {
 
       <div className="addproduct-itemfield">
         <label htmlFor="file-input">
-          <img src={image ? URL.createObjectURL(image) : upload_area} className="addproduct-tumnail-img" alt=""/>
+          <img src={image?URL.createObjectURL(image): upload_area} className="addproduct-tumnail-img" alt=""/>
         </label>
         <input onChange={imageHandler} type="file" name="image" id="file-input" hidden/>
       </div>
-      <button
-        onClick={() => {
-          Add_Product()
-        }}
-        className="addproduct-button">ADD</button>
+      <button onClick={() => {Add_Product()}} className="addproduct-button">ADD</button>
     </div>
   )
 }
