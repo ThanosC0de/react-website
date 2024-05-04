@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 const multer = require("multer");
 const path = require("path");
 const cors = require("cors");
-const { log } = require("console");
+const { log, error } = require("console");
 const { type } = require("os");
 
 
@@ -146,7 +146,7 @@ const Users = mongoose.model('Users',{
     cartData:{
         type:Object,
     },
-    data:{
+    date:{
         type:Date,
         default:Date.now,
     }
@@ -157,12 +157,12 @@ const Users = mongoose.model('Users',{
 app.post('/signup',async(req,res)=>{
 
     let check = await Users.findOne({email:req.body.email});
-    if (check){
-        return res.status(400).json({success:false,errors:"existing user found with same email address"})
+        if (check) {
+        return res.status(400).json({success:false,error:"Exisiting user with same email address"})
     }
     let cart = {};
-    for (let i = 0; i < 300; i++) {
-       cart[i]=0;
+        for (let i = 0; i < 300; i++) {
+        cart[i]=0;
     }
     const user = new Users({
         name:req.body.username,
@@ -176,12 +176,11 @@ app.post('/signup',async(req,res)=>{
     const data = {
         user:{
             id:user.id
-        }
+      }
     }
 
-    const token = jwt.sing(data,'secret_ecom');
+    const token = jwt.sign(data,'secret_ecom');
     res.json({success:true,token})
-    
 })
 
 //Running port 
